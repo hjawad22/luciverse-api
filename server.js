@@ -1,8 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-const knexConfig = require('./knexfile').development;
-const knex = require('knex')(knexConfig);
+const knex = require('./knex');
 
 const app = express();
 app.use(cors());
